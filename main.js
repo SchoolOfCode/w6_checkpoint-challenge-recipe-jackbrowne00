@@ -24,6 +24,13 @@ async function fetchRecipe(foodToSearch) {
 
 function throughRecipes() {
   for (let i=0; i<recipe.hits.length; i++) {
-    console.log (recipe.hits[i].recipe.totalWeight);
+
+    let tag = document.createElement("div");
+    let text = document.createTextNode(recipe.hits[i].recipe.label)
+    tag.appendChild(text);
+
+    let element = document.getElementById("recipe-label");
+    element.appendChild(tag)
+    console.log (recipe.hits[i].recipe.label);
   }
 }
