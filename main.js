@@ -24,13 +24,20 @@ async function fetchRecipe(foodToSearch) {
 
 function throughRecipes() {
   for (let i=0; i<recipe.hits.length; i++) {
+    let anchor = document.createElement("a");
+    var link = document.createTextNode(recipe.hits[i].recipe.label);
+    anchor.appendChild(link);
+    anchor.title = (recipe.hits[i].recipe.label);
+    anchor.href = (recipe.hits[i].recipe.shareAs);
+    document.body.appendChild(anchor);
 
-    let tag = document.createElement("div");
-    let text = document.createTextNode(recipe.hits[i].recipe.label)
-    tag.appendChild(text);
 
-    let element = document.getElementById("recipe-label");
-    element.appendChild(tag)
-    console.log (recipe.hits[i].recipe.label);
+    // let tag = document.createElement("div");
+    // let text = document.createTextNode(recipe.hits[i].recipe.label)
+    // tag.appendChild(text);
+
+    // let element = document.getElementById("recipe-label");
+    // element.appendChild(tag)
+    // console.log (recipe.hits[i].recipe.label);
   }
 }
