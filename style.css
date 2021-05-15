@@ -4,21 +4,41 @@ body{
     background-color: rgb(36, 36, 36);
 }
 
-#search-result {
-    position: relative;
+#section-heading {
+    padding: 0px 0px 0px 10px;
 }
 
-#search-DOM {
-    background-color: darkblue;
+#search-button {
+    background-color: rgb(104, 104, 104);
+    padding: 10px 0px 10px 10px;
+}
+
+#food-input {
+    height:25px;
+}
+
+.search-DOM-container {
+    background-color: rgb(104, 104, 104);
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+}
+
+.search-DOM {
+    background-color: rgb(104, 104, 104);
     position: relative;
 }
 
 .recipe-pic{
     width: 120px;
+    height: 120px;
 }
 
 .recipe-title{
+    padding-top: 0px;
     font-size: medium;
+    padding-left: 20px;
 }
 
 .recipe-info-list{

@@ -32,16 +32,20 @@ clearForNewSearch();
   for (let i=0; i<recipe.hits.length; i++) {
     let caloriesInteger = parseInt(recipe.hits[i].recipe.calories);
     searchResult.innerHTML += `
-    <div class="search-DOM">
-    <a href="${recipe.hits[i].recipe.url}" >
-      <img class="recipe-pic" src="${recipe.hits[i].recipe.image}">
-    </a>
-    <h3 class="recipe-title" >${recipe.hits[i].recipe.label}</h3>
-      <ul class="recipe-info-list">
-      <li>Cuisine: ${recipe.hits[i].recipe.cuisineType}</li>
-      <li>Dish Type: ${recipe.hits[i].recipe.dishType}</li>
-      <li>Calories: ${caloriesInteger} kcal</li>
-      </ul>
+    <div class="search-DOM-container">
+    <div class="recipe-image">
+        <a href="${recipe.hits[i].recipe.url}" >
+          <img class="recipe-pic" src="${recipe.hits[i].recipe.image}">
+        </a>
+    </div>
+    <div class="recipe-text-content">
+        <h3 class="recipe-title" >${recipe.hits[i].recipe.label}</h3>
+        <ul class="recipe-info-list">
+          <li>Cuisine: ${recipe.hits[i].recipe.cuisineType}</li>
+          <li>Dish Type: ${recipe.hits[i].recipe.dishType}</li>
+          <li>Calories: ${caloriesInteger} kcal</li>
+        </ul>
+    </div>
     </div>
     `
   }

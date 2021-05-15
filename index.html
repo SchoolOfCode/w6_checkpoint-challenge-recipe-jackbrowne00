@@ -8,12 +8,14 @@
   </head>
   <body>
     <section id="recipe-section">
-      <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
+      <h2 id="section-heading">Welcome to the Recipe Finder!</h2>
+    <div id="search-button">
       <input aria-label="food-input" id="food-input" onchange="handleFoodChange()" />
       <button id="recipe-button" onclick="handleRecipeClick()">
         Give me a recipe!
       </button>
-      <div class="search-result"></div>
+    </div>
+      <div class="search-result" ></div>
     </section>
     <script src="./main.js"></script>
   </body>
