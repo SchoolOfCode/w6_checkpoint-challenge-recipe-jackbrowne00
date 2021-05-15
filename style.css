@@ -61,8 +61,8 @@ body{
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 #recipe-button:hover {
-	color: #000 !important;
-	background-color: transparent;
+	color: rgb(255, 255, 255) !important;
+	background-color: #38b4ae;
 	text-shadow: ntwo;
 }
 #recipe-button:hover:before {
@@ -79,7 +79,7 @@ body{
 	width: 100%;
 	z-index: -1;
 	content: '';
-	color: #000 !important;
+	color: rgb(255, 255, 255) !important;
 	background: #38b4ae;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
